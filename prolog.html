@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>Prime Sign-In</title>
+    <link  href="page3.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="https://www.pngitem.com/pimgs/m/1-12775_amazon-logo-icon-png-icon-amazon-logo-png.png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@421&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <img src="https://images-na.ssl-images-amazon.com/images/G/01/digital/video/avod/AV_Logo_150._CB430404026_.png" alt="Prime Video">
+            <form action="">
+                <h2 >Sign-In</h2>
+                <label for="email">Email</label><br>
+                <input  class="hsign" type="email" id="email" name="email" required autofocus><br>
+                <label for="pass">Password</label><br>
+                <input class="hsign" type="password" id="pass" name="pass" required minlength="6" maxlength="18"><br>
+                <input class="cbox" type="checkbox" onclick="myFunction()">Show Password 
+                <script>
+                    function myFunction() 
+                    {
+                            var x = document.getElementById("pass");
+                            if (x.type === "password") 
+                        {
+                            x.type = "text";
+                        }
+                        else 
+                        {
+                            x.type = "password";
+                        }
+                    }
+                </script> 
+                <button type="submit" >Sign-In</button><br><hr>
+                <p>New to Prime?</p>
+                <a href="prosign.html">
+                    <button class="butbox" type="button">Create a new account</button>
+                </a>
+            </form>
+        </div>
+    </main>
+</body>
