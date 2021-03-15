@@ -140,7 +140,7 @@ p{
         font-family: 'Playfair Display', serif;
         font-weight: 500px;
         font-size: 17px;
-        margin-left: 35px;
+        margin: auto;
     }
     input , button,#warn2{
         width: 300px;
